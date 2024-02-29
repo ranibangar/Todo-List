@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgb(16, 16, 70), rgb(125, 54, 206));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#todo-app {
+  min-width: 25%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 30px 70px;
+}
+
+#todo-app h4 {
+  display: flex;
+  gap: 15px;
+  font-weight: 700;
+  color: rgb(40, 40, 143);
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#todo-app h4 img {
+  width: 30px;
+}
+#inputField {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#inpText {
+  padding: 12px;
+  width: 75%;
+  border-radius: 15px;
+  background-color: hsla(0, 0%, 83%, 0.899);
+  border: none;
+  font-size: 16px;
+  outline: none;
+  overflow: visible;
+}
+
+#btn {
+  padding: 12px 25px;
+  background-color: #ff5945;
+  color: white;
+  border-radius: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: #a31506;
+}
+ul {
+  margin-top: 20px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 20px;
+  margin-bottom: 5px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+/* ul li::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url(/asset/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: black;
+}
+ul li.checked::before{
+background-image: url(/asset/checked.png);
+} */
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+.listItem .itemDescription {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.itemChecked:checked + .itemDescription {
+  text-decoration: line-through;
+  color: black;
+}
+
+span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: #555;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+span:hover {
+  background: #d0d0d2;
+}
+
+#taskCount {
+  width: 100px;
+  padding: 12px 25px;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-top: 80px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff5945;
+  text-align: center;
+}
